@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/98a2276151.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+
+  <body class="font-serif bg-slate-400">
+    <!-- navbar -->
+    <nav
+      class="py-4 px-4 lg:px-8 text-black bg-slate-400 flex justify-between items-center max-w-5xl mx-auto"
+    >
+      <a href="#" class="w-fit">
+        <span class="text-lg font-mono font-bold w-auto">.bit </span>
+      </a>
+      <ul class="w-fit flex space-x-4 md:space-x-8 justify-end items-center">
+        <a
+          href="https://drive.google.com/file/d/1VT5QtA457qP6eteqTyHeNtPNd6O0aVeG/view"
+          class="font-serif hover:text-slate-500 transition-all duration-300"
+          target="_blank"
+          >Resume</a
+        >
+      </ul>
+    </nav>
+    <!-- Main section -->
+    <div
+      class="px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between main max-w-5xl mx-auto"
+    >
+      <div class="w-full md:w-1/2 py-12 md:py-24">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl mb-4 font-serif font-thin">
+          Parth Kaul
+        </h1>
+        <p class="text-lg sm:text-xl md:text-xl mb-8 font-serif">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <!-- Tech Stack Heading -->
+        <h2 class="text-2xl mb-2">Tech Stack</h2>
+        <!-- Tech Stack Icons (Using <i> tag) -->
+        <div class="flex flex-wrap items-center space-x-2 md:space-x-4">
+          <span
+            class="inline-flex items-center px-3 py-1 border border-black rounded-full text-black bg-white hover:bg-black hover:text-white transition-all duration-300 mb-2"
+          >
+            <i class="fab fa-html5 mr-1"></i> HTML
+          </span>
+          <span
+            class="inline-flex items-center px-3 py-1 border border-black rounded-full text-black bg-white hover:bg-black hover:text-white transition-all duration-300 mb-2"
+          >
+            <i class="fab fa-css3-alt mr-1"></i> CSS
+          </span>
+          <span
+            class="inline-flex items-center px-3 py-1 border border-black rounded-full text-black bg-white hover:bg-black hover:text-white transition-all duration-300 mb-2"
+          >
+            <i class="fab fa-js-square mr-1"></i> JavaScript
+          </span>
+          <span
+            class="inline-flex items-center px-3 py-1 border border-black rounded-full text-black bg-white hover:bg-black hover:text-white transition-all duration-300 mb-2"
+          >
+            <i class="fab fa-react mr-1"></i> React
+          </span>
+        </div>
+      </div>
+      <!--  Image here  -->
+      <div class="flex flex-col items-center md:pt-24 md:pr-8">
+        <div class="photo-container rounded-full overflow-hidden">
+          <img
+            src="./img/my_pic.jpeg"
+            alt="Image"
+            class="w-32 h-32 md:w-48 md:h-48 object-cover transform transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+        <div class="socials mt-4 flex justify-center space-x-4 md:space-x-6">
+          <a href="https://github.com/parthkaul-bit" target="_blank"
+            ><i
+              class="fa-brands fa-github text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
+              style="color: #000000"
+            ></i
+          ></a>
+          <a href="https://linkedin.com/in/kaulparth/" target="_blank"
+            ><i
+              class="fa-brands fa-linkedin-in text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
+              style="color: #000000"
+            ></i
+          ></a>
+          <a href="https://discord.com/users/339040754578096129" target="_blank"
+            ><i
+              class="fa-brands fa-discord text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
+              style="color: #000000"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Project section -->
+    <div class="bg-slate-300 py-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl md:text-5xl tracking-wide text-gray-800 text-center mb-8 font-semi-bold"
+        >
+          Featured Projects
+        </h2>
+        <div class="grid grid-cols-1 gap-8">
+          <div
+            class="flex flex-col md:flex-row-reverse items-center border-b border-gray-500 pb-8"
+          >
+            <div class="md:w-1/2 p-4">
+              <div
+                class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:scale-105"
+              >
+                <a href="https://centsible-nu.vercel.app" target="_blank">
+                  <img
+                    src="./img/expense_tracker.jpg"
+                    alt="Centsible Project"
+                    class="w-full h-56 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </a>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-slate-300 px-4 py-2 opacity-100 shadow-md"
+                >
+                  <p class="text-sm text-gray-700">
+                    Application designed to help users manage personal finances
+                    effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-4">
+              <h3 class="text-xl md:text-2xl mb-2 text-gray-800">
+                Centsible - An Expense Tracker
+              </h3>
+              <p class="text-gray-700 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                pretium ultrices lorem, in hendrerit diam vestibulum nec. Duis
+                scelerisque arcu arcu, nec sollicitudin risus blandit non. Fusce
+                tincidunt elit sit amet erat pharetra gravida. Aliquam erat
+                volutpat.
+              </p>
+              <p class="text-gray-700 mb-2">
+                Technologies Used: HTML, CSS, Material UI, React.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center border-b border-gray-500 pb-8"
+          >
+            <div class="md:w-1/2 p-4">
+              <div
+                class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:scale-105"
+              >
+                <a
+                  href="https://github.com/parthkaul-bit/localscene"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/localscene.jpg"
+                    alt="Localscene Project"
+                    class="w-full h-56 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </a>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-slate-300 px-4 py-2 opacity-100 shadow-md"
+                >
+                  <p class="text-sm text-gray-700">
+                    A cultural event website with a wide range of activities and
+                    performances celebrating local culture.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-4">
+              <h3 class="text-xl md:text-2xl mb-2 text-gray-800">
+                Localscene - A cultural event website
+              </h3>
+              <p class="text-gray-700 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                pretium ultrices lorem, in hendrerit diam vestibulum nec. Duis
+                scelerisque arcu arcu, nec sollicitudin risus blandit non. Fusce
+                tincidunt elit sit amet erat pharetra gravida. Aliquam erat
+                volutpat.
+              </p>
+              <p class="text-gray-700 mb-2">
+                Technologies Used: HTML, CSS, Django, MySQL.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row-reverse items-center border-b border-gray-500 pb-8"
+          >
+            <div class="md:w-1/2 p-4">
+              <div
+                class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:scale-105"
+              >
+                <a href="https://amazia.vercel.app/index.html" target="_blank">
+                  <img
+                    src="./img/amazon.jpg"
+                    alt="Amazia Project"
+                    class="w-full h-56 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </a>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-slate-300 px-4 py-2 opacity-100 shadow-md"
+                >
+                  <p class="text-sm text-gray-700">
+                    Replicating Amazon's core e-commerce features, including
+                    product listings, shopping cart and order processing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-4">
+              <h3 class="text-xl md:text-2xl mb-2 text-gray-800">
+                Amazia - An Amazon Clone
+              </h3>
+              <p class="text-gray-700 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                pretium ultrices lorem, in hendrerit diam vestibulum nec. Duis
+                scelerisque arcu arcu, nec sollicitudin risus blandit non. Fusce
+                tincidunt elit sit amet erat pharetra gravida. Aliquam erat
+                volutpat.
+              </p>
+              <p class="text-gray-700 mb-2">
+                Technologies Used: HTML, CSS, JavaScript.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center border-b border-gray-500 pb-8"
+          >
+            <div class="md:w-1/2 p-4">
+              <div
+                class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:scale-105"
+              >
+                <a
+                  href="https://your-photography-dump-website-url.com"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/movie.jpg"
+                    alt="BingeBox Project"
+                    class="w-full h-56 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </a>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-slate-300 px-4 py-2 opacity-100 shadow-md"
+                >
+                  <p class="text-sm text-gray-700">
+                    An application for booking tickets for TV shows.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-4">
+              <h3 class="text-xl md:text-2xl mb-2 text-gray-800">
+                BingeBox - A TV Shows App
+              </h3>
+              <p class="text-gray-700 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                pretium ultrices lorem, in hendrerit diam vestibulum nec. Duis
+                scelerisque arcu arcu, nec sollicitudin risus blandit non. Fusce
+                tincidunt elit sit amet erat pharetra gravida. Aliquam erat
+                volutpat.
+              </p>
+              <p class="text-gray-700 mb-2">
+                Technologies Used: HTML, CSS, React.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
