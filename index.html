@@ -17,12 +17,6 @@
         class="py-4 px-4 lg:px-8 flex justify-between items-center max-w-5xl mx-auto"
       >
         <a href="#" class="text-lg font-bold">.bit</a>
-        <a
-          href="https://drive.google.com/file/d/1VT5QtA457qP6eteqTyHeNtPNd6O0aVeG/view"
-          target="_blank"
-          class="hover:text-slate-500 transition-all duration-300"
-          >Resume</a
-        >
       </nav>
 
       <!-- Hero Section -->
@@ -76,26 +70,80 @@
     </div>
     <!-- Selected Work Section -->
     <section class="py-20 px-4 lg:px-8 max-w-7xl mx-auto" id="projects">
-      <div class="flex justify-between items-center mb-12">
+      <div class="flex justify-center items-center mb-12">
         <h2 class="text-3xl font-thin">Selected Work</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Project 1 -->
-        <div class="bg-white overflow-hidden ow-lg">
-          <div class="aspect-w-1 aspect-h-1">
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
             <img
-              src="./img/expense_tracker.jpg"
-              alt="Centsible Project"
+              src="./public/dev.jpeg"
+              alt="Dev.io Image"
               class="object-cover"
             />
+            <a
+              href="https://dev-io-fe.onrender.com"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
           </div>
           <div class="py-6">
-            <!-- Flex container for title and link on large screens -->
             <div
               class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
             >
               <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Centsible - Expense Tracker
+                Dev.io - A Blog Website
+              </h3>
+              <a
+                href="https://dev-io-fe.onrender.com"
+                target="_blank"
+                class="text-sm font-semibold hover:underline flex items-center group pr-1"
+              >
+                View Project
+                <i
+                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                ></i>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >React</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >API Integration</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >CSS</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
+            <img
+              src="./public/centsible.jpeg"
+              alt="Centsible Project"
+              class="object-cover"
+            />
+            <a
+              href="https://centsible-nu.vercel.app"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
+          </div>
+          <div class="py-6">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
+                Centsible - An Expense Tracker
               </h3>
               <a
                 href="https://centsible-nu.vercel.app"
@@ -108,7 +156,6 @@
                 ></i>
               </a>
             </div>
-            <!-- Technology Chips -->
             <div class="flex flex-wrap gap-2">
               <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
                 >React</span
@@ -123,55 +170,21 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="bg-white overflow-hidden ow-lg">
-          <div class="aspect-w-1 aspect-h-1">
-            <img
-              src="./img/localscene.jpg"
-              alt="Localscene Project"
-              class="object-cover"
-            />
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Localscene - Cultural Events
-              </h3>
-              <a
-                href="https://github.com/parthkaul-bit/localscene"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Django</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Python</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-        </div>
-
         <!-- Project 3 -->
-        <div class="bg-white overflow-hidden ow-lg">
-          <div class="aspect-w-1 aspect-h-1">
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
             <img
-              src="./img/amazon.jpg"
+              src="./public/amazia.jpeg"
               alt="Amazia Project"
               class="object-cover"
             />
+            <a
+              href="https://amazia.vercel.app/index.html"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
           </div>
           <div class="py-6">
             <div
@@ -206,23 +219,76 @@
         </div>
 
         <!-- Project 4 -->
-        <div class="bg-white overflow-hidden ow-lg">
-          <div class="aspect-w-1 aspect-h-1">
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
             <img
-              src="./img/movie.jpg"
-              alt="BingeBox Project"
+              src="./public/dev.jpeg"
+              alt="Pokedex Project Image"
               class="object-cover"
             />
+            <a
+              href="https://pokedexworld.netlify.app/"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
+          </div>
+          <div class="py-6">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold mb-2 lg:mb-0">Pokedex</h3>
+              <a
+                href="https://pokedexworld.netlify.app/"
+                target="_blank"
+                class="text-sm font-semibold hover:underline flex items-center group pr-1"
+              >
+                View Project
+                <i
+                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                ></i>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >HTML</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >CSS</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
+            <img
+              src="./public/metube.jpeg"
+              alt="Metube Image"
+              class="object-cover"
+            />
+            <a
+              href="https://me-tube-beta.vercel.app"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
           </div>
           <div class="py-6">
             <div
               class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
             >
               <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                BingeBox - TV Shows App
+                MeTube - YouTube for Programmers
               </h3>
               <a
-                href="#"
+                href="https://me-tube-beta.vercel.app"
                 target="_blank"
                 class="text-sm font-semibold hover:underline flex items-center group pr-1"
               >
@@ -241,6 +307,150 @@
               >
               <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
                 >CSS</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
+            <img
+              src="./public/localscene.jpeg"
+              alt="Localscene Project"
+              class="object-cover"
+            />
+            <a
+              href="https://github.com/parthkaul-bit/localscene"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
+          </div>
+          <div class="py-6">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
+                Localscene - Cultural Events
+              </h3>
+              <a
+                href="https://github.com/parthkaul-bit/localscene"
+                target="_blank"
+                class="text-sm font-semibold hover:underline flex items-center group pr-1"
+              >
+                View Code
+                <i
+                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                ></i>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >Django</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >Python</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >MySQL</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
+            <img
+              src="./public/fittube.jpeg"
+              alt="Fittube Project Image"
+              class="object-cover"
+            />
+            <a
+              href="https://ephemeral-raindrop-5bcbbc.netlify.app"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
+          </div>
+          <div class="py-6">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
+                Fittube - A Exercise Partner
+              </h3>
+              <a
+                href="https://ephemeral-raindrop-5bcbbc.netlify.app"
+                target="_blank"
+                class="text-sm font-semibold hover:underline flex items-center group pr-1"
+              >
+                View Project
+                <i
+                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                ></i>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >HTML</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >CSS</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="bg-white overflow-hidden rounded-md relative">
+          <div class="aspect-w-1 aspect-h-1 relative">
+            <img
+              src="./public/rockpaperscissors.jpeg"
+              alt="Rock Paper Scissors Game"
+              class="object-cover"
+            />
+            <a
+              href="https://rock-paper-scissors-zeta-beige.vercel.app"
+              target="_blank"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            >
+              <i class="fas fa-eye text-white text-4xl"></i>
+            </a>
+          </div>
+          <div class="py-6">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
+            >
+              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
+                Rock Paper Scissors Game
+              </h3>
+              <a
+                href="https://rock-paper-scissors-zeta-beige.vercel.app"
+                target="_blank"
+                class="text-sm font-semibold hover:underline flex items-center group pr-1"
+              >
+                View Project
+                <i
+                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                ></i>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >HTML</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >CSS</span
+              >
+              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
+                >JavaScript</span
               >
             </div>
           </div>
