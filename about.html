@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/public/logo.png" />
+
+    <style>
+      .polaroid {
+        background: white;
+        padding: 1rem;
+        padding-bottom: 3rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .polaroid:hover {
+        transform: rotate(0deg) !important;
+      }
+      .polaroid-1 {
+        transform: rotate(-3deg);
+      }
+      .polaroid-2 {
+        transform: rotate(2deg);
+      }
+      .polaroid-3 {
+        transform: rotate(-2deg);
+      }
+      @media (max-width: 768px) {
+        .polaroid {
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="mx-auto w-full sm:w-[90%] md:w-[100%] lg:w-[90%]">
+    <header id="hero">
+      <nav class="navbar">
+        <div
+          class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 w-full sm:w-[90%] md:w-[70%] lg:w-[50%]"
+        >
+          <a id="logo" href="index.html">
+            <img src="public/logo.png" alt="Logo" />
+          </a>
+          <ul class="nav-menu flex justify-center items-center">
+            <li><a class="nav-link flex" href="index.html">HOME</a></li>
+            <li>
+              <a
+                class="nav-link flex bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full"
+                href="https://drive.google.com/file/d/1NOtQNUSLRYA9a3raXeuvBNhCxvZcGerv/view?usp=sharing"
+                target="_blank"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24 pb-12 max-w-4xl">
+      <!-- About Section -->
+      <section class="mb-16 sm:mb-18">
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
+              About Me
+            </h2>
+            <div class="space-y-4 order-2 md:order-1">
+              <p class="text-base sm:text-lg">
+                I'm a full-stack developer who thrives on creating products that
+                solve real-world problems. Currently delivering projects at TEN,
+                I'm passionate about making tech work for people—crafting
+                solutions that simplify life :)
+              </p>
+              <p class="text-base sm:text-lg">
+                In the past few months, I've delivered 5 projects and had the
+                opportunity to lead 3 of them.
+              </p>
+            </div>
+          </div>
+          <div
+            class="polaroid-1 polaroid order-1 md:order-2 mx-auto w-full max-w-xs"
+          >
+            <img
+              src="/public/cafe.jpeg"
+              alt="Developer at work"
+              class="w-full h-48 sm:h-64 object-cover mb-4"
+            />
+            <p class="text-center text-gray-600">Powered by coffee ☕️</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey Section -->
+      <section class="mb-16 sm:mb-18">
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
+              My Coding Journey
+            </h2>
+            <div class="space-y-4">
+              <p class="text-base sm:text-lg">
+                My journey into coding started in college, where I had no prior
+                experience but was tasked with submitting a solution for problem
+                statement for Smart India Hackathon as a semester project.
+              </p>
+              <p class="text-base sm:text-lg">
+                After countless sleepless nights, we developed LocalScene, a
+                Django-based cultural event app that helped organize and
+                streamline college events. This project was my first real taste
+                of development and sparked my passion for building things that
+                matter.
+              </p>
+              <!-- <p class="text-base sm:text-lg">
+                By my last, I found myself captivated by solving real-world
+                problems through technology. Reading case studies on impactful
+                products inspired me to keep learning and pushing my boundaries
+                as a developer.
+              </p>
+              <p class="text-base sm:text-lg">
+                Now, I'm focused on finding innovative ways to make people's
+                lives better by leveraging technology.
+              </p> -->
+            </div>
+          </div>
+          <div class="polaroid polaroid-2 mx-auto w-full max-w-xs">
+            <img
+              src="/public/journey.jpeg"
+              alt="Coding journey"
+              class="w-full h-48 sm:h-64 object-cover mb-4"
+            />
+            <p class="text-center text-gray-600">Where it all began 🚀</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Off-Screen Adventures Section -->
+      <section class="mb-12 sm:mb-16">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
+          Off-Screen Adventures
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-8 gap-6 sm:gap-8"
+        >
+          <div class="polaroid polaroid-3 mx-auto w-full max-w-xs">
+            <img
+              src="/public/avocado.jpeg"
+              alt="Cooking"
+              class="w-full h-40 sm:h-48 object-cover mb-4"
+            />
+            <p class="text-center text-gray-600">Avocado and Egg Toast 🥑</p>
+          </div>
+          <div class="polaroid polaroid-3 mx-auto w-full max-w-xs">
+            <img
+              src="/public/basketball.jpeg"
+              alt="Basketball"
+              class="w-full h-40 sm:h-48 object-cover mb-4"
+            />
+            <p class="text-center text-gray-600">Court time 🏀</p>
+          </div>
+          <div
+            class="polaroid polaroid-2 mx-auto w-full max-w-xs sm:col-span-2 md:col-span-1"
+          >
+            <img
+              src="/public/philosophy.webp"
+              alt="Philosophy"
+              class="w-full h-40 sm:h-48 object-cover mb-4"
+            />
+            <p class="text-center text-gray-600">Deep discussions 🤔</p>
+          </div>
+          <div
+            class="col-span-1 sm:col-span-2 md:col-span-3 mt-6 sm:mt-8 space-y-4"
+          >
+            <p class="text-base sm:text-lg">
+              When I'm not immersed in code, I love to unwind in a few different
+              ways. I find peace in the kitchen, experimenting with new recipes.
+              There's something incredibly satisfying about creating something
+              delicious with my own hands.
+            </p>
+            <p class="text-base sm:text-lg">
+              Basketball is another one of my passions. Whether it's playing a
+              casual pick-up game or just shooting hoops alone, I love staying
+              active and challenging myself on the court.
+            </p>
+            <p class="text-base sm:text-lg">
+              On top of that, I'm a huge fan of deep philosophical discussions.
+              I'm the type of person who can talk about everything from
+              existentialism to complexities of human nature, and I'm always
+              down for a conversation that makes you think outside the box.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Improved Footer -->
+    <footer class="text-black py-8 sm:py-12">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl sm:text-3xl mb-4 font-bold">
+              Have a project in mind?
+            </h3>
+            <a
+              href="mailto:parthkaul.work@gmail.com"
+              class="text-black hover:text-green-700 transition-colors"
+            >
+              parthkaul.work@gmail.com
+            </a>
+          </div>
+          <div class="text-center md:text-right">
+            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+            <div class="flex justify-center md:justify-end space-x-6">
+              <a
+                href="https://github.com/parthkaul-bit"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-github text-2xl"></i>
+              </a>
+              <a
+                href="https://x.com/parth_kaul"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/kaulparth/"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <p class="text-center text-sm sm:text-base">
+            Built with ❤️ and probably too much coffee
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

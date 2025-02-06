@@ -1,518 +1,133 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/98a2276151.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Parth Kaul - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Parth Kaul</title>
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/logo.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="public/logo.png" />
+    <link rel="icon" type="image/x-icon" href="/public/logo.png" />
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://parthkaul-bit.github.io/portfolio/img/my_pic.jpeg"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body class="font-sans text-gray-800">
-    <div class="bg-slate-300">
+  <body class="mx-auto w-full sm:w-[90%] md:w-[100%] lg:w-[90%]">
+    <header id="hero">
       <!-- Navbar -->
-      <nav
-        class="py-4 px-4 lg:px-8 flex justify-between items-center max-w-5xl mx-auto"
-      >
-        <a href="#" class="text-lg font-bold">parthkaul.bit</a>
+      <nav class="navbar">
+        <div
+          class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 w-full sm:w-[90%] md:w-[70%] lg:w-[50%]"
+        >
+          <!-- Logo -->
+          <a id="logo" href="index.html">
+            <img src="public/logo.png" alt="Logo" />
+          </a>
+          <!-- Navbar links -->
+          <ul class="nav-menu flex justify-center items-center">
+            <li><a class="nav-link flex" href="about.html">ABOUT</a></li>
+            <li>
+              <a
+                class="nav-link flex bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full"
+                href="https://drive.google.com/file/d/1NOtQNUSLRYA9a3raXeuvBNhCxvZcGerv/view?usp=sharing"
+                target="_blank"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
-      <!-- Hero Section -->
-      <header
-        class="flex flex-col-reverse md:flex-row justify-between max-w-5xl mx-auto mb-16 px-4 py-24"
-      >
-        <div class="w-full md:w-1/2 py-12 md:py-24">
-          <h1 class="text-5xl md:text-7xl font-bold mb-6">Parth Kaul.</h1>
-          <p class="text-xl md:text-2xl mb-8 max-w-3xl">
-            Building Digital Experiences, One Project at a Time.
+      <section class="header-container">
+        <img class="profile-image" src="public/pfp_2.jpg" alt="" />
+
+        <div class="content-text">
+          <h2>
+            Crafting seamless <br />
+            full-stack digital experiences.
+          </h2>
+
+          <p>
+            Hey, I’m Parth Kaul – a Full-Stack Developer who’s always tinkering
+            with code to fix real-world problems and make tech feel a little
+            more human.
           </p>
-          <a
-            href="#projects"
-            class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300 scroll-smooth"
-            >See Projects</a
-          >
         </div>
-        <div class="flex flex-col items-center md:pt-24 md:pr-8">
-          <div class="photo-container rounded-full overflow-hidden">
-            <img
-              src="./img/my_pic.jpeg"
-              alt="Parth Kaul"
-              class="w-32 h-32 md:w-48 md:h-48 object-cover transform transition-transform duration-500 hover:scale-105"
-            />
-          </div>
-          <div class="socials mt-4 flex justify-center space-x-4 md:space-x-6">
-            <a href="https://github.com/parthkaul-bit" target="_blank"
-              ><i
-                class="fa-brands fa-github text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
-                style="color: #000000"
-              ></i
-            ></a>
-            <a href="https://linkedin.com/in/kaulparth/" target="_blank"
-              ><i
-                class="fa-brands fa-linkedin-in text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
-                style="color: #000000"
-              ></i
-            ></a>
-            <a href="https://twitter.com/parth_kaul" target="_blank">
-              <i
-                class="fab fa-twitter text-xl md:text-2xl transition-transform duration-300 transform scale-100 hover:scale-125"
-                style="color: #000000"
-              ></i>
-            </a>
-          </div>
-        </div>
-      </header>
-      <hr />
-    </div>
-    <!-- Selected Work Section -->
-    <section class="py-20 px-4 lg:px-8 max-w-7xl mx-auto" id="projects">
-      <div class="flex justify-center items-center mb-12">
-        <h2 class="text-3xl font-thin">Selected Work</h2>
+        <a
+          href="#projects"
+          class="btn bg-green-700 text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >See My Work</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section class="pt-20 px-4 lg:px-8 max-w-5xl mx-auto" id="projects">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of my work</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Project 1 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/dev.jpeg"
-              alt="Dev.io Image"
-              class="object-cover"
-            />
-            <a
-              href="https://dev-io-fe.onrender.com"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Dev.io - A Blog Website
-              </h3>
-              <a
-                href="https://dev-io-fe.onrender.com"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >React</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Node.js</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Express</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >MongoDB</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/centsible.jpeg"
-              alt="Centsible Project"
-              class="object-cover"
-            />
-            <a
-              href="https://centsible-nu.vercel.app"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Centsible - An Expense Tracker
-              </h3>
-              <a
-                href="https://centsible-nu.vercel.app"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >React</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Material UI</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/amazia.jpeg"
-              alt="Amazia Project"
-              class="object-cover"
-            />
-            <a
-              href="https://amazia.vercel.app/index.html"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Amazia - Amazon Clone
-              </h3>
-              <a
-                href="https://amazia.vercel.app/index.html"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >HTML</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >CSS</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >JavaScript</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/pokedex.jpeg"
-              alt="Pokedex Project Image"
-              class="object-cover"
-            />
-            <a
-              href="https://pokedexworld.netlify.app/"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">Pokedex</h3>
-              <a
-                href="https://pokedexworld.netlify.app/"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >React</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >TypeScript</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Firebase</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/metube.jpeg"
-              alt="Metube Image"
-              class="object-cover"
-            />
-            <a
-              href="https://me-tube-beta.vercel.app"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                MeTube - YouTube for Programmers
-              </h3>
-              <a
-                href="https://me-tube-beta.vercel.app"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >React</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Material UI</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >API Integration</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/localscene.jpeg"
-              alt="Localscene Project"
-              class="object-cover"
-            />
-            <a
-              href="https://github.com/parthkaul-bit/localscene"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Localscene - Cultural Events
-              </h3>
-              <a
-                href="https://github.com/parthkaul-bit/localscene"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Code
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Django</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Python</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/fittube.jpeg"
-              alt="Fittube Project Image"
-              class="object-cover"
-            />
-            <a
-              href="https://ephemeral-raindrop-5bcbbc.netlify.app"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Fittube - An Exercise Partner
-              </h3>
-              <a
-                href="https://ephemeral-raindrop-5bcbbc.netlify.app"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >React</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >API Integration</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >Material UI</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 8 -->
-        <div class="bg-white overflow-hidden rounded-md relative">
-          <div class="aspect-w-1 aspect-h-1 relative">
-            <img
-              src="./public/rockpaperscissors.jpeg"
-              alt="Rock Paper Scissors Game"
-              class="object-cover"
-            />
-            <a
-              href="https://rock-paper-scissors-zeta-beige.vercel.app"
-              target="_blank"
-              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-            >
-              <i class="fas fa-eye text-white text-4xl"></i>
-            </a>
-          </div>
-          <div class="py-6">
-            <div
-              class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4"
-            >
-              <h3 class="text-xl font-semibold mb-2 lg:mb-0">
-                Rock Paper Scissors Game
-              </h3>
-              <a
-                href="https://rock-paper-scissors-zeta-beige.vercel.app"
-                target="_blank"
-                class="text-sm font-semibold hover:underline flex items-center group pr-1"
-              >
-                View Project
-                <i
-                  class="fas fa-external-link-alt ml-2 transform transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                ></i>
-              </a>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >HTML</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >CSS</span
-              >
-              <span class="px-4 py-1 bg-gray-200 text-sm rounded-full"
-                >JavaScript</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div>
-            <h3 class="md:text-3xl text-2xl mb-4 font-bold">
+    <footer class="text-black py-8 sm:py-12">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="text-left md:text-left">
+            <h3 class="text-2xl sm:text-3xl mb-4 font-bold">
               Have a project in mind?
-              <br />
-              Send me a mail:
             </h3>
             <a
               href="mailto:parthkaul.work@gmail.com"
-              class="text-blue-400 hover:underline"
+              class="text-black hover:text-green-700 transition-colors"
             >
               parthkaul.work@gmail.com
             </a>
           </div>
-          <div class="flex justify-start md:justify-end">
-            <div class="text-left md:text-right">
-              <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
-              <div class="flex space-x-4">
-                <a
-                  href="https://github.com/parthkaul-bit"
-                  target="_blank"
-                  class="hover:text-blue-400 transition-colors"
-                >
-                  <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a
-                  href="https://twitter.com/parth_kaul"
-                  target="_blank"
-                  class="hover:text-blue-400 transition-colors"
-                >
-                  <i class="fab fa-twitter text-2xl"></i>
-                </a>
-                <a
-                  href="https://linkedin.com/in/kaulparth/"
-                  target="_blank"
-                  class="hover:text-blue-400 transition-colors"
-                >
-                  <i class="fab fa-linkedin text-2xl"></i>
-                </a>
-              </div>
+          <div class="text-giht md:text-right">
+            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+            <div class="flex justify-start md:justify-end space-x-6">
+              <a
+                href="https://github.com/parthkaul-bit"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-github text-2xl"></i>
+              </a>
+              <a
+                href="https://x.com/parth_kaul"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/kaulparth/"
+                target="_blank"
+                class="transform hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div
-          class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center"
-        >
-          <!-- Optional footer content here -->
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <p class="text-center text-sm sm:text-base">
+            Built with ❤️ and probably too much coffee
+          </p>
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
   </body>
 </html>
