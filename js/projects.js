@@ -146,7 +146,7 @@ function createProjectCard(project) {
                 <img
                     src="${image}"
                     alt="${imageAlt}"
-                    class="object-cover"
+                    class="object-cover rounded-xl"
                 />
                 <a
                     href="${link}"
