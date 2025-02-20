@@ -5,7 +5,7 @@ const projectsData = [
     title: "Ten-AgenticWorkflow",
     image: "./public/bolt-old.png",
     imageAlt: "Ten-AgenticWorkflow Project",
-    link: "https://ten-agentic-ai.vercel.app/",
+    link: "https://agentic-workflow.vercel.app/",
     technologies: ["MERN", "StackBlitz", "GroqAI", "NetlifyAPI"],
   },
   {
