@@ -5,7 +5,7 @@ const projectsData = [
     title: "Ten-AgenticWorkflow",
     image: "./public/bolt-old.png",
     imageAlt: "Ten-AgenticWorkflow Project",
-    link: "https://agentic-workflow.vercel.app/",
+    link: "https://itsagentic.vercel.app/",
     technologies: ["MERN", "StackBlitz", "GroqAI", "NetlifyAPI"],
   },
   {
@@ -37,7 +37,7 @@ const projectsData = [
     title: "Dev.io - A Blog Website",
     image: "./public/dev.jpeg",
     imageAlt: "Dev.io Image",
-    link: "https://dev-io-fe.onrender.com",
+    link: "https://devio-sand.vercel.app/",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
